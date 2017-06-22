@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js -p",
+    "watch": "webpack --progress --colors --watch",
     "transpile-es2015": "babel src -d lib"
   },
   "repository": {
