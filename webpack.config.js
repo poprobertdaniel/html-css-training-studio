@@ -5,7 +5,7 @@ module.exports = {
         main: './root/src/scripts/style.js'
     },
     output: {
-        filename: './root/dist/scripts/index.js'
+        filename: './root/dist/scripts/main.js'
     },
     devtool: 'source-map',
     module: {
