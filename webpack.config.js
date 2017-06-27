@@ -1,23 +1,38 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin =  require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './root/src/scripts/style.js'
+        main: './root/src/scripts/main.js'
     },
     output: {
-        filename: './root/dist/scripts/main.js'
+        path: '/root/dist/scripts',
+        filename: 'main.js',
+        publicPath: '/root/dist/scripts'
     },
+    watch: true,
     devtool: 'source-map',
     module: {
-        rules: [
+        loaders: [
           {
-            test: /\.(sass|scss)$/,
-            use: [
+            test: /\.scss$/,
+            exclude: /node_modules/,
+            loaders: [
               'style-loader',
               'css-loader',
-              'sass-loader',
+              'sass-loader'
             ]
+          },
+          {
+            test: /\.html$/,
+            loader: "raw-loader"
           }
         ]
-    }
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        })
+    ]
 };
