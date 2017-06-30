@@ -10,13 +10,16 @@ body{
 h1{
     color: #4c4c4b;
 }
+ul{
+    list-style-type: none;
+}
 .header-menu-container{
     border-top: 3px solid red;
-    /*background-color: #333333;*/
-    background-color: transparent;
+    background-color: #333333;
+    /*background-color: transparent;*/
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -54,6 +57,9 @@ h1{
 .logo{
     height: 28px;
 }
+.footer-logo{
+    height: 36px;
+}
 .home{
     height: 650px;
     padding-top: 50px;
@@ -72,6 +78,10 @@ h1{
     margin-top: 120px;
     text-align: center;
 }
+.prices__try-now{
+    margin-top: 60px;
+    text-align: center;
+}
 .button-like{
     width: 200px;
     height: 42px;
@@ -82,6 +92,9 @@ h1{
     text-align: center;
     display: inline-block;
     cursor: pointer;
+}
+.button-like:hover{
+    background-color: #c02b27;
 }
 .details__presentation{
     position: relative;
@@ -229,9 +242,11 @@ h1{
     margin-left: -5px;
     font-weight: 700;
     border: 1px solid #2b2c2b;
+    opacity: 0.75;
 }
 .prices li:hover{
-    border: 1px solid red;
+    border: 2px solid red;
+    cursor: pointer;
 }
 .plan-group{
     margin-top: 20px;
@@ -242,4 +257,70 @@ h1{
 }
 .faded-color{
     color: #4c4c4b;
+}
+.prices-tva{
+    opacity: 0.75;
+    font-size: 12px;
+}
+.footer-container{
+    background-color: #333333;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.footer{
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    color: #7d7d7d;
+    opacity: 0.6;
+}
+.footer__left, .footer__right{
+    width: 20%;
+}
+.footer__center{
+    width: 60%;
+}
+.footer__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__row.footer__copyright{
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.footer__list, .footer__list ul{
+    list-style-type: none;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.about li, .blog li, .partners li, .contact li{
+    margin-top: 10px;
+}
+.about li:hover, .blog li:hover, .partners li:hover, .contact li:hover:first-child{
+    cursor: pointer;
+    color: #ffffff;
+}
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+.social-media li{
+    display: inline-block;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+.social-media li:hover{
+    opacity: 1;
 }
