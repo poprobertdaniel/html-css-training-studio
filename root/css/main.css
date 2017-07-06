@@ -1,5 +1,17 @@
-div {
-  width: 200px;
+div.container{
+  width: 500px;
   height: 200px;
-  background-color: red;
+  border-color: red;
 }
+
+div.container1{
+	
+	background-color: blue;
+}
+
+
+p {
+	font-size: 25px;
+	color: red
+}
+
