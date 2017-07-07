@@ -1,4 +1,5 @@
 /*  */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
   margin: 0;
   padding: 0;
@@ -11,12 +12,16 @@ body {
 .header {
   width: 100%;
   padding: 10px;
-  /*background-color: #333;*/
   border-top: 5px solid #ec2d2b;
+  z-index: 1;
 }
 .changeHeaderBG {
+  width: 100%;
+  padding: 10px;
+  border-top: 5px solid #ec2d2b;
   background-color:  #333;
   position: fixed;
+  z-index: 1;
 }
 .logo {
   height: 40px;
@@ -30,7 +35,7 @@ body {
   padding: 7px;
   margin: 0;
 }
-/*if i add the class name at the beginning it just ignores the style poperties*/
+/*class name in front doesn't apply the style ?*/
 ul li {
   display: inline;
   margin: 0 20px;
@@ -163,11 +168,13 @@ ul li:hover {
 
 /* DETAILS */
 .details {
- position: relative;
+  width: 100%;
+  height: 250px;
+  position: relative;
 }
 .arrow {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%)
@@ -175,50 +182,280 @@ ul li:hover {
 .title {
  color: #4c4c4b;
  font-size: 28px;
- margin-top: 150px;
  font-weight: bold;
  position: absolute;
+ top: 50%;
  left: 50%;
+ margin-right: -50%;
  transform: translate(-50%)
 }
+.cratima {
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #ec2d2b;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%)
+}
 
+/* BENEFICII */
+.container {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+.beneficii {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.beneficiu, .col {
+  flex-grow: 1;
+  margin: 1px 1px;
+}
+.beneficiu {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(76, 76, 75, 0.75);
+  padding: 50px;
+  /*background-color: red;*/
+}
 
-
-
-/*
-
+/* CONCLUSION */
+.container-conclusion {
+  position: relative;
+  height: 200px;
+  margin-bottom: 100px;
+}
 .conclusion {
-  color:  .333;
-  font-size: 15pt;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #4c4c4b;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
+}
+
+/* QUOTE */
+.quote-container {
+  position: relative;
+  height: 220px;
+  background-color: #2b2b2b;
+}
+.quote-content {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
+}
+
+/* CLIENTS */
+.clients{
+  position: relative;
+  height: 370px;
+  background-color: rgba(43, 43, 43, 0.07);
+}
+.clients-title {
+  color: #4c4c4b;
+  font-size: 28px;
   font-weight: bold;
   position: absolute;
-  left: 34%;
-  margin-top: 650px;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
 }
- .details table {
-  text-align: center;
-  color:  .7a7a7a;
+.cratima-clients {
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #ec2d2b;
   position: absolute;
-  left: 33%;
-  margin-top: 200px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%)
 }
- .details table td {
-  padding: 20px 50px;
+.client-logos {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%)
+}
+.client-logos img {
+  display: inline;
+  height: 100px;
+  padding: 0 20px;
 }
 
-
-
- .quote {
-  width: 100%;
-  background-color:  .2b2b2b;
-  color:  .fff;
-  text-align: center;
-  margin-top: 840px;
-  padding: 30px 0;
+/* ABONAMENTE */
+.abonamente {
   position: relative;
-  font-size: 13.5pt;
+  height: 850px;
+  width: 100%;
 }
- .quote span {
-  font-weight: bolder;
+.abonamente-title {
+  color: #4c4c4b;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
 }
-*/
+.cratima-abonamente {
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #ec2d2b;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+/* OFFERS */
+.offers {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%)
+}
+.column {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #4c4c4b;
+  line-height: 1.72;
+  padding: 20px;
+  border: 1px solid rgba(76,76,75,0.5);
+}
+.column:hover {
+  border: 2px solid #ec2d2b;
+  cursor: pointer;
+}
+.column span {
+  font-size: 36px;
+  color: #ec2d2b;
+  display: inline;
+}
+.icon {
+  height: 45px;
+  width: 45px;
+  margin-left: 135px;
+  margin-bottom: 10px;
+  background-image: url('../images/Calendis_House_Inactive.png');
+}
+.column:hover .icon {
+  background-image: url('../images/Calendis_House_Active.png');
+}
+.icon2 {
+  height: 45px;
+  width: 55px;
+  margin-left: 135px;
+  margin-bottom: 10px;
+  background-image: url('../images/Calendis_Building_Inactive.png');
+}
+.column:hover .icon2 {
+  background-image: url('../images/Calendis_Building_Active.png');
+}
+.column-heading {
+  font-size: 24px;
+  color: #2c2c2c;
+}
+.column-heading2 {
+  font-size: 18px;
+  color: #2c2c2c;
+  display: inline;
+}
+
+/* FINE PRINT */
+.fine-print {
+  position: relative;
+  height: 250px;
+}
+.fine-print-content {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2c2c2c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+
+/* FOOTER */
+.footer {
+  position: relative;
+  height: 200px;
+  background-color: #2b2b2b;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%)
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2.08;
+  color: rgba(125, 125, 125, 1);
+}
+.footer-column img {
+  padding-top: 15px;
+  height: 40px;
+}
+.footer-column a {
+  color: rgba(125, 125, 125, 1);
+  text-decoration: none;
+}
+.copyright {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2.08;
+  color: rgba(125, 125, 125, 1);
+  position:absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+
+/**/
