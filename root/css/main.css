@@ -1,0 +1,224 @@
+/*  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  min-width: 1200px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  padding: 10px;
+  /*background-color: #333;*/
+  border-top: 5px solid #ec2d2b;
+}
+.changeHeaderBG {
+  background-color:  #333;
+  position: fixed;
+}
+.logo {
+  height: 40px;
+}
+.navigation {
+  float: right;
+  color: white;
+}
+.navigation ul {
+  list-style-type: none;
+  padding: 7px;
+  margin: 0;
+}
+/*if i add the class name at the beginning it just ignores the style poperties*/
+ul li {
+  display: inline;
+  margin: 0 20px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+ul li:hover {
+  border-bottom: 3px solid  #ec2d2b;
+}
+
+/* PICTURE / LANDING */
+ .landing {
+  width: 100%;
+  background-image: url('../images/Layer.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 692px;
+  position: relative
+}
+
+/* HEADING */
+.heading {
+  /*margin: 0 auto;*/
+  width: 550px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.static-text {
+  color:  #fff;
+  font-size: 48px;
+  display: inline;
+}
+.sliding-text {
+  display: inline;
+  font-size: 48px;
+	text-indent: 8px;
+}
+.sliding-text span{
+	animation: topToBottom 10s linear infinite 0s;
+	opacity: 0;
+  color:  #fff;
+	overflow: hidden;
+	position: absolute;
+  font-weight: 300;
+}
+.sliding-text span:nth-child(2){
+	animation-delay: 2s;
+}
+.sliding-text span:nth-child(3){
+	animation-delay: 4s;
+}
+.sliding-text span:nth-child(4){
+	animation-delay: 6s;
+}
+.sliding-text span:nth-child(5){
+	animation-delay: 8s;
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-100px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(100px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/* SIGN UP BUTTON */
+.sign-up-btn {
+  cursor: pointer;
+  color:  #fff;
+  padding: 15px 30px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color:  #ec2d2b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/* DESCRIPTION */
+ .description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
+}
+ .description .quote {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: -100px;
+  z-index: 2;
+}
+ .description img {
+  position: absolute;
+  opacity: 0.9;
+  left: 32%;
+  margin-right: -68%;
+}
+
+/* OVERLAYS */
+.black-polygon {
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+  margin-bottom: -30px;
+  width: 1980px;
+  height: 200px;
+  transform: rotate(-2deg);
+  top: 30px;
+}
+
+.black-polygon::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 130px;
+  width: 100%;
+  border-bottom: 75px solid #fff;
+  transform: skew(88deg);
+  transform-origin: bottom left;
+}
+
+/* DETAILS */
+.details {
+ position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%)
+}
+.title {
+ color: #4c4c4b;
+ font-size: 28px;
+ margin-top: 150px;
+ font-weight: bold;
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%)
+}
+
+
+
+
+/*
+
+.conclusion {
+  color:  .333;
+  font-size: 15pt;
+  font-weight: bold;
+  position: absolute;
+  left: 34%;
+  margin-top: 650px;
+}
+ .details table {
+  text-align: center;
+  color:  .7a7a7a;
+  position: absolute;
+  left: 33%;
+  margin-top: 200px;
+}
+ .details table td {
+  padding: 20px 50px;
+}
+
+
+
+ .quote {
+  width: 100%;
+  background-color:  .2b2b2b;
+  color:  .fff;
+  text-align: center;
+  margin-top: 840px;
+  padding: 30px 0;
+  position: relative;
+  font-size: 13.5pt;
+}
+ .quote span {
+  font-weight: bolder;
+}
+*/
