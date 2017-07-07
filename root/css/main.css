@@ -34,6 +34,7 @@ body {
     background-color: #696969;
     /*background: transparent;*/
     border-top: 3px solid #c02b27;
+    z-index: 1;
 }
 .nav-top {
 
@@ -61,12 +62,23 @@ body {
 .header {
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: -20px auto;
     width: 100%;
     height: 100%;
     background: url('../img/Layer.jpg');
     background-size: cover;
     text-align: center;
+}
+.header-title-div {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.headers-title {
+    height: 80px;
+    color: white;
 }
 .sign-in-button {
     display: block;
@@ -83,8 +95,10 @@ body {
     background-color: #9d0000;
 }
 .headers-footer {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    /*justify-content: center;*/
+    color: white;
+    z-index: 1;
 }
 /*MESSAGE*/
 .motto {
@@ -185,6 +199,9 @@ body {
     font-size: 30px;
     color: #c02b27;
 }
+.item-prices h3 {
+    font-size: 20px;
+}
 .image-house {
     width: 50px;
     height: 50px;
@@ -211,4 +228,34 @@ body {
 .legend p {
     margin: 0 0 0 -8px;
     font-size: 12px;
+}
+/*FOOTER*/
+.footer-display {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #333;
+    color: lightgray;
+    padding: 50px 0;
+    justify-content: center;
+}
+.item-footer {
+    padding: 0 30px;
+}
+.item-footer:first-child,
+.item-footer:last-child {
+   margin-top: 25px;
+}
+.footer-display a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 12px;
+}
+.footer-display a:hover {
+    color: white;
+}
+.footer-display p {
+    font-size: 12px;
+}
+.social-media {
+  padding-right: 10px;
 }
