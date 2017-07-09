@@ -1,6 +1,51 @@
-.test-div {
+.first-div {
   .test {
     color: blue;
     font-size: 24px;
   }
+}
+
+.layer{
+    width: 1366px;
+    height: 692px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    width: 114px;
+    height: 40px;
+    position: absolute;
+    left: 213px;
+    top: 15px;
+}
+
+.options{
+    width: 340px;
+    height: 15px;
+    position: absolute;
+    left: 816px;
+    top: 30px;
+    p {
+        color: white;
+        display: inline;
+        padding: 5px;
+        .log-in {
+            font-weight:bold;
+        }
+    }
+}
+
+
+.carousel-inner .carousel {
+    position: absolute;
+    left: 451px;
+    top: 193px;
+}
+
+.item {
+    color: white;
+    left: 451px;
+    top: 193px;
 }
