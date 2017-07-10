@@ -1,6 +1,118 @@
-.test-div {
-  .test {
-    color: blue;
-    font-size: 24px;
-  }
+body {
+	font-family: Roboto, Arial;
+	padding: 0;
+	margin: 0;
+}
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+nav {
+	padding: 15px;
+}
+.calendis-menu {
+	list-style-type: none;
+	float: right;
+	line-height: 40px;
+	font-size: 16px;
+    margin: 0;
+    padding: 0;
+	li {
+		display: inline-block;
+		width: 80px;
+		position: relative;
+		text-align: center;
+		&:after {
+			display: none;
+		    content: '';
+		    height: 3px;
+		    width: 50%;
+		    background-color: #ec2d2b;
+		    bottom: 0;
+		    transform: translateX(-50%);
+		    position: absolute;
+		    border-radius: 30px;
+		    left: 50%;
+		}
+		&:hover:after {
+			display: block;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+.calendis-logo {
+	width: 115px;
+	height: 40px;
+}
+.first-section {
+	border-top: 5px solid #ec2d2b;
+	background-image: url("/img/Layer.jpg");
+	background-size: cover;
+	height: 700px;
+	color: #fff;
+}
+.header-center-block {
+	margin: 120px auto;
+    width: 500px;
+	text-align: center;
+	.calendis-red-button {
+		margin-top: 120px;
+	}
+}
+.calendis-animation {
+	font-size: 48px;
+	span {
+		font-weight: 300;
+	}
+}
+.calendis-red-button {
+	cursor: pointer;
+	width: 200px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #ec2d2b;
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+}
+.calendis-quote-wrapper {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 150px;
+	position: absolute;
+	width: 100%;
+	bottom: 270px;
+	&:before {
+	    content: '';
+	    border-width: 0px 0 70px 2000px;
+	    border-color: transparent transparent rgba(0,0,0,0.5) transparent;
+	    border-style: solid;
+	    position: absolute;
+	    top: -70px;
+	    width: 100%;
+    }
+	&:after {
+     	content: '';
+	    border-width: 60px 0 0 2000px;
+	    border-color: transparent transparent transparent #FFF;
+	    border-style: solid;
+	    position: absolute;
+	    width: 100%;
+	    bottom: -1px;
+	    left: 0;
+    }
+}
+.calendis-quote {
+    width: 680px;
+    margin: 0 auto;
+	padding: 20px 0px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: center;
+	img {
+		float: left;
+	}
 }
