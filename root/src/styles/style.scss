@@ -1,3 +1,7 @@
+.first-layer {
+    height: 690px;
+    position: absolute;
+}
 .first-div {
   .test {
     color: blue;
@@ -7,7 +11,7 @@
 
 .layer{
     width: 1366px;
-    height: 692px;
+    height: 992px;
     position: absolute;
     left: 0;
     top: 0;
@@ -35,8 +39,10 @@
             font-weight:bold;
         }
     }
+    p:hover {
+        border-bottom: 1px solid red;
+    }
 }
-
 
 .carousel-inner .carousel {
     position: absolute;
@@ -48,4 +54,32 @@
     color: white;
     left: 451px;
     top: 193px;
+}
+
+.btn {
+    position: absolute;
+    top: 340px;
+    left: 520px;
+    height: 40px;
+    width: 200px;
+    background-color: red;
+    color: white;
+}
+
+.quote {
+    position: absolute;
+    top: 700px;
+    width: 1366px;
+    height: 200px;
+    display: inline;
+    p{
+        display: inline;
+        color: white;
+    }
+}
+
+.quote_picture {
+    display: inline;
+    
+    padding-left: 307px;
 }
