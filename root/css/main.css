@@ -1,5 +1,9 @@
-div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+
+/*Navigation bar*/
+.navigation-wrapper {
+  width: 100%;
+  background-color: rgb(206, 213, 224);
+}
+.navigation-wrapper li {
+  display: inline;
 }
