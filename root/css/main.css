@@ -1,5 +1,8 @@
-div {
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
+.navigation-wrapper {
+	width: 100%;
+	background-color: lightgrey;
+
+}
+.navigation-wrapper li {
+	display: inline;
 }
