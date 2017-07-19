@@ -1,8 +1,23 @@
 .navigation-wrapper {
-	width: 100%;
-	background-color: lightgrey;
+	/*width: 100%;*/
+	/*background-color: lightgrey;*/
+	background-image: url("../images/imag2.jpg");
+	height: 150px;
+	padding-top:30px;
 
 }
 .navigation-wrapper li {
 	display: inline;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: "Times New Roman";
+	color: white;
+	background-color: #292347;
+	height: 150px;
+	padding: 15px;
+}
+
+.navigation-wrapper li:hover{
+	color: #FFABE3;
+	background-color: #19152E;
 }
