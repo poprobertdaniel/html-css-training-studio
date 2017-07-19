@@ -3,3 +3,17 @@ div {
   height: 200px;
   background-color: red;
 }
+.navigation-wrapper{
+	width: 100%;
+	background-color: #ced5e0;
+}
+.navigation-wrapper li {
+	display: inline;
+	:hover {
+		background-color: #808080;
+	};
+}
+
+.navigation-wraper > li a: hover{
+ 	background-color: #CD5C5C;
+ }
