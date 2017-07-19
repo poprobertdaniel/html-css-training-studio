@@ -1,5 +1,28 @@
-div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-}
+.navigation-wrapper{
+	width:45%;
+	background-color:brown;
+    padding: 8px;
+	
+	}
+	
+.navigation-wrapper li {
+	display:inline;
+	color: black;
+    text-align: center;
+    padding: 8px;
+	font-size:25px;
+	font-weight:bold;
+	
+	}
+	
+.navigation-wrapper li a:hover{
+	background-color: black;
+    color: white;
+	}
+	
+body {
+	background: url(bgimage4.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+
