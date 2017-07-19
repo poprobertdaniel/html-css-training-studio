@@ -1,0 +1,53 @@
+.background {
+    width:900px;
+    height: 330px;
+    background-image:url("../images/stele.jpg");
+    background-repeat: no-repeat;
+}
+
+.navigation-wrapper {
+    background-color: rgba(100, 100, 150, 0.7);
+    position: absolute;
+    top: 70px;
+    width: 800px;
+    height: 140px;
+}
+
+.navigation-wrapper ul {
+    position: absolute;
+    left: 20px;
+    top:40px;
+}
+
+.navigation-wrapper li {
+    display: inline;
+    padding: 20px;
+    background-color: DarkSlateBlue;
+    border-right: 1px solid DarkGrey;
+}
+
+.navigation-wrapper li:last-child {
+    border-right: none;
+}
+
+.navigation-wrapper li:hover {
+    background-color: MidnightBlue;
+}
+
+.navigation-wrapper li a {
+    color: white;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+}
+
+.navigation-wrapper li a:hover {
+    color: pink;
+}
+
+
+div{
+    background-color: red;
+    height:50px;
+    width: 50px;
+}
+
