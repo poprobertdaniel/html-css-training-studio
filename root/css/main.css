@@ -1,43 +1,36 @@
-div.container{
-  width: 500px;
-  height: 200px;
-  border-color: red;
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
-div.container1{
-	
-	background-color: blue;
+a {
+	color: #000000;
+	text-decoration: none;
 }
 
-
-p {
-	font-size: 25px;
-	color: red
+ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
+.header{
+	height: 6px;
+	width: 2000px;
+	background-color: #ED2927;
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f46842;
-}
- 
- li {
-    float: left;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.zone1 {
+	background: url("../HTML-CSS Training images/Layer.jpg"); 
+
+	height: 692px;
+	width: 2000px;
+
+	border-color: #ED2927
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+.zone2 {
+-webkit-background-size: cover;	font-size: 30px;
 }
-
