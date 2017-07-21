@@ -2,14 +2,16 @@ body {
     background-image: url("../../IMG/Layer.jpg");
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     font-family: Roboto,sans-serif;
 }
 
 .col-xs-12{
     width: 100%;
     text-align: center;
-
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .nav{
@@ -131,6 +133,18 @@ button{
     font-size: 16px;
     width: 200px;
     height: 40px;
+}
 
+.short_intro {
 
+    position: relative;
+    padding: 0 34% 0 34%;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    transform: rotate(-2deg);
+
+}
+
+.short_intro div {
+    display: inline;
 }
