@@ -26,10 +26,13 @@ ul, ol, li {
 
 #navbar-wrapper li{
 	display: inline;
-	color: white;
 	font-size: 16px;
 	padding:0px 15px;
-	font-family: "Roboto", sans-serif;
-	
+	font-family: "Roboto", sans-serif;	
 }
+
+#navbar-wrapper li a{
+	color: white;	
+}
+
 
