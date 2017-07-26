@@ -129,22 +129,70 @@ button{
     border-color: #9d0000;
     border: 0;
     border-radius: 3px;
+    margin: 10px;
     font-weight: 700;
     font-size: 16px;
     width: 200px;
     height: 40px;
 }
 
-.short_intro {
-
+.short_intro_border {
     position: relative;
-    padding: 0 34% 0 34%;
+    margin-top: 120px;
+    padding: 0 0 200px 0;
     background-color: rgba(0,0,0,.5);
-    color: white;
     transform: rotate(-2deg);
+    z-index: -1;
 
 }
 
+
+.short_intro {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 590px;
+    left: 600px;
+
+}
 .short_intro div {
-    display: inline;
+    float: left;
+    max-width: 650px;
 }
+.short_intro div p {
+    margin: auto;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.Alternative_aux {
+    position: relative;
+    top: -60px;
+    background-color: white;
+    padding: 50px;
+    transform: rotate(2deg);
+    z-index: -1;
+}
+
+.Alternative_3{
+    text-align: center;
+    position: relative;
+    background-color: white;
+    top: -120px;
+}
+
+.Box_wrapper {
+}
+
+.Box_wrapper p {
+    margin: 0;
+    padding: auto;
+    text-align: center;
+}
+
+.Box_wrapper div {
+    float: left;
+
+}
+
