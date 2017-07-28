@@ -6,6 +6,9 @@ h1,h2,h3,h4,h5,h6,p{
     font-family: Roboto,sans-serif;
 }
 
+body div {
+}
+
 .col-xs-12{
     width: 100%;
     text-align: center;
@@ -16,14 +19,17 @@ h1,h2,h3,h4,h5,h6,p{
 
 .nav{
     position: fixed;
+    padding-top: 15px;
     padding-left: 200px;
     padding-right: 200px;
     margin: 0 auto;
     border-color:  #333;
     list-style-type: none;
     overflow: hidden;
-    top: 20px;
+    top: 0;
     width: 80%;
+    background-color: #333333;
+    z-index: 20;
 }
 
 .nav li {
@@ -180,19 +186,165 @@ button{
     position: relative;
     background-color: white;
     top: -120px;
+    width: 100%;
+    height: 600px;
 }
 
-.Box_wrapper {
+.Alternative_3.col-xs-12 {
+    padding-top: 80px;
 }
 
-.Box_wrapper p {
-    margin: 0;
+.Cubix {
+    padding-left: 29%;
+    padding-right: 25%;
+    color: white;
+    background-color: white;
+}
+
+.Cubix div p {
+    margin-top: 20px ;
     padding: auto;
     text-align: center;
+    font-family: Roboto, sans-serif;
+    color: black;
 }
 
-.Box_wrapper div {
+.Boxy_wrapper_element {
+    width: 400px;
+    margin-top: 50px;
     float: left;
 
+
 }
 
+.col-xs-14{
+    position: relative;
+    top: -140px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom:100px;
+    padding-top:20px;
+}
+
+.Quote{
+    position: relative;
+    top: -220px;
+    background-color:#2b2b2b ;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.Associates {
+    position: relative;
+    top: -300px;
+    padding-top: 50px;
+    padding-b: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.Associates img {
+   margin: 50px 15px 150px 15px;
+    max-height: 100px;
+    max-width: 100%;
+
+}
+
+.Associates p {
+    font-size: 12px;
+    color: #4c4c4b;
+}
+
+
+
+.Abonamentes{
+    height: 520px;
+    width: 600px;
+    padding: 20px 41% 20px 35%;
+}
+
+.Abonamentes div {
+
+    float: left;
+}
+
+.Abonamentes img {
+    margin: 0;
+}
+
+.Abonamentes h1 {
+    color: red;
+}
+.Abonamentes p {
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.Abonamentes h1 b{
+    color: #515151;
+    font-size: 18px;
+}
+
+.Abonamente_Anual{
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+.Abonamente_Anual:hover{
+    border: 2px solid red;
+
+}
+.Abonamente_Lunar{
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #eee;
+
+}
+.Abonamente_Lunar:hover{
+    border: 2px solid red;
+
+}
+
+.Footer{
+    position: relative;
+    top: -380px;
+    background-color:#2b2b2b ;
+    color: white;
+    font-size: 12px;
+}
+.Footer_Links{
+    font-size: 18px;
+    line-height: 26px;
+    padding: 40px 100px 60px 450px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+
+
+.Footer img {
+    float: left;
+    width: 114px;
+    height: 40px;
+
+}
+
+.Footer ul {
+    float: left;
+    padding-left: 80px;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.Footer h5 {
+    text-align: center;
+}
