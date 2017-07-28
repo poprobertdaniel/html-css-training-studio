@@ -21,6 +21,7 @@ ol, ul, li, p {
 
 .navigation-wrapper {
     position: fixed;
+    z-index: 1;
     display: block;
     width: 100%;
 }
@@ -34,13 +35,17 @@ ol, ul, li, p {
 
 .grey-line {
     height: 55px;
-    opacity: 0.75;
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.5);
     margin-bottom: 168px;
 }   
 
+.middle {
+    display: inline-block;
+    width: 70%;
+}
 
 .icon {
+    /*display: inline-block;*/
     float: left;
     margin-top: 7px;
     margin-left: 10px;
@@ -62,6 +67,7 @@ ol, ul, li, p {
 
 .navigation-wrapper ul li a {
     color: white;
+    opacity: 1;
     padding: 10px;
 }
 
@@ -74,10 +80,10 @@ ol, ul, li, p {
     display: block;
     width: 100%;
     height:692px;
-    background-image: url(../images/guy.jpg);
+    background-image: url(../images/100000.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    <!-- background-size: 100% 100%; -->
+    /*filter: brightness(50%);*/
     background-color: grey;
     background-attachment: fixed;
 }
@@ -100,10 +106,8 @@ ol, ul, li, p {
     padding-top: 17px;
     padding-bottom: 14px;
     margin-bottom: 70px;
-}
-
-.button a {
-    color: white;
+    color:white;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -112,12 +116,10 @@ ol, ul, li, p {
 
 .trapezoid {
     display: inline-block;
-    /*margin-top: 8%;*/
     width: 100%;
     height: 200px;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
-    background: #000000;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     vertical-align: middle;
 }
@@ -131,6 +133,7 @@ ol, ul, li, p {
     display: inline-block;
     padding-top: 76px;
     color:white;
+    opacity: 1;
     font-size: 18px;
 }
 
@@ -168,23 +171,12 @@ ol, ul, li, p {
     margin-bottom: 100px;
 }
 
-.horizontal-separator {
-    height: 1px;
-    width: 820px;
-    border-bottom: 1px solid grey;
-}
-
-.vertical-separator {
-    border: 1px solid grey;
-    width: 1px;
-    height: 431px;
-}
-
 .tabel {
-    margin: auto;
+    margin: 0 auto;
     border-collapse: collapse;
-    width: 820px;
+    width: 840px;
     height: 431px;
+    table-layout: fixed;
     text-align: center;
     /*font-weight: bold;*/
     font-size: 18px; 
@@ -228,8 +220,9 @@ ol, ul, li, p {
 }
 
 .client-logos {
-    height: 91px;
-    padding: 20px;
+    height: 81px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .price-tabs {
