@@ -11,7 +11,7 @@ module.exports = {
         publicPath: '/root/dist/scripts'
     },
     watch: true,
-    devtool: 'source-map',
+    devtool: 'eval',
     module: {
         loaders: [
           {
@@ -26,6 +26,13 @@ module.exports = {
           {
             test: /\.html$/,
             loader: "raw-loader"
+          },
+          {
+            test: /\.(png|jpg|gif)$/,
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
           }
         ]
     },

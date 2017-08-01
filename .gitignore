@@ -1,4 +1,4 @@
-node_modules
+/node_modules
 root/dist
 root/dist/scripts/main.*
 root/dist/styles/main.*
