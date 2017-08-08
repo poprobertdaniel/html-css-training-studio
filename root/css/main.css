@@ -36,30 +36,78 @@ ul, ol, li {
 	background-image: url("../images/calendis-logo-white.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-
+	vertical-align: middle;
 }
 
 .navigation-list{
 	width:59%;
+	vertical-align: middle;
 	text-align: right;
+}
+
+.calendis-logo, .navigation-list{
+	display: inline-block;
 }
 
 .navigation-list ul li{
 
 	display: inline;
 	font-size: 16px;
-	padding:0px 15px;
-	font-family: "Roboto", sans-serif;	
+	padding:10px 15px;
+	font-family: "Roboto";	
 	
+
+}
+
+.navigation-list ul li:hover{
+	border-color: red;
+	border-bottom-style: solid;
+	border-radius: 1.5px;
+
+	}
+
+
+.navigation-list ul li:last-of-type{
+	font-weight: bold;
 }
 
 .navigation-list li a{
 	color: white;	
 }
 
-.calendis-logo, .navigation-list{
-	display: inline-block;
+#home-section p{
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	padding-top: 140px;
 }
+
+.register-div{
+	text-align: center;
+	padding-top: 102px;
+}
+
+.register-btn{
+	width: 200px;
+  	height: 42px;
+  	border-radius: 3px;
+  	font-size: 16px;
+  	font-family: "Roboto";
+  	font-weight: bold;
+  	color: white;
+  	border-color: transparent;
+  	background-color: #ec2d2b;
+  	text-transform: uppercase;
+
+}
+
+.end-home-section p{
+	font-size: 16px;
+  	font-family: "Roboto";
+/*  	color: white;*/
+}
+
+
 
 
 
