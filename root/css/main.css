@@ -2,6 +2,7 @@ html , body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -9,15 +10,22 @@ a {
 	text-decoration: none;
 }
 
-ul, ol, li {
+ul, ol, li, p {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.content{
+/*.content{
 	width: 100%;
-	height: 100%;
+	height: auto;
+	background-image: url("../images/Layer.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+
+#home-section{
 	background-image: url("../images/Layer.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,6 +35,7 @@ ul, ol, li {
 	width:100%;
 	height: 40px;
 	padding-top: 10px;
+	position: fixed;
 	
 }
 
@@ -50,12 +59,9 @@ ul, ol, li {
 }
 
 .navigation-list ul li{
-
 	display: inline;
 	font-size: 16px;
-	padding:10px 15px;
-	font-family: "Roboto";	
-	
+	padding:10px 15px;	
 
 }
 
@@ -75,7 +81,7 @@ ul, ol, li {
 	color: white;	
 }
 
-#home-section p{
+.home-section p{
 	font-size: 48px;
 	color: white;
 	text-align: center;
@@ -92,7 +98,6 @@ ul, ol, li {
   	height: 42px;
   	border-radius: 3px;
   	font-size: 16px;
-  	font-family: "Roboto";
   	font-weight: bold;
   	color: white;
   	border-color: transparent;
@@ -102,8 +107,8 @@ ul, ol, li {
 }
 
 .end-home-section p{
-	font-size: 16px;
-  	font-family: "Roboto";
+	font-size: 18px;  	
+  	line-height: 27px;
 /*  	color: white;*/
 }
 
