@@ -152,6 +152,7 @@ margin-top: 100px;
 	display: inline-block;
 	width: 49.6%;
 	text-align: center;
+	/*height:180px;*/
 }
 
 .col1, .col3 {
@@ -167,10 +168,11 @@ margin-top: 100px;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top;
+	
 }
 
 .col1 p{
-
+	
 }
 
 
