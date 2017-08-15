@@ -16,15 +16,6 @@ ul, ol, li, p {
 	list-style: none;
 }
 
-/*.content{
-	width: 100%;
-	height: auto;
-	background-image: url("../images/Layer.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
-
 #home-section{
 	background-image: url("../images/Layer.jpg");
 	background-repeat: no-repeat;
@@ -106,11 +97,87 @@ ul, ol, li, p {
 
 }
 
+.end-home-section {
+height: 200px;
+margin-top: 100px;
+
+}
+
 .end-home-section p{
+	background-image: url("../images/Calendis_Quote_Mark_Grey.png");
+	background-repeat: no-repeat;
+	background-position: 22% 100%; /* de modificat pt responsivness */
 	font-size: 18px;  	
   	line-height: 27px;
-/*  	color: white;*/
+  	padding-top: 75px;
+
 }
+
+#benefits-section{
+	width: 100%;
+	height: auto;
+}
+
+.down-arrow {
+	background-image: url("../images/Calendis_Arrow_Red100.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height:60px;
+}
+
+.benefits-title p {
+	font-size: 28px;
+	font-weight: bold;
+	color: #4c4c4b;
+	text-align: center;
+	padding-top: 48px;
+	
+}
+
+.benefits-title hr{
+	border:0;
+    border-top: 5px solid red;
+    border-radius: 2px;
+    width: 50px;
+}
+
+.first-row, .second-row{
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(76, 76, 75, 0.75);
+}
+
+.col1, .col2, .col3, .col4 {
+	display: inline-block;
+	width: 49.6%;
+	text-align: center;
+}
+
+.col1, .col3 {
+	border-right: 1px solid gray;
+}
+
+.col1, .col2 {
+	border-bottom: 1px solid gray;
+}
+
+.col1 {
+	background-image: url("../images/Calendis_Evidenta.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+}
+
+.col1 p{
+
+}
+
+
+
+
+
+
 
 
 
