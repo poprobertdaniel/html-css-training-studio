@@ -2,8 +2,11 @@ html, body {
     margin: 0;
     padding: 0
     height:100%;
+
+    /*Added by me*/
     font-family: Verdana;
     font-size: 16px;
+    color: rgba(76, 76, 75, 0.75);
     text-align: center;
 }
 
@@ -19,204 +22,194 @@ ol, ul, li, p {
 }
 
 
-.navigation-wrapper {
-    position: fixed;
-    z-index: 1;
-    display: block;
-    width: 100%;
-}
+/*Common elements*/
 
-.red-line {
-    display:block;
-    width:100%;
-    height:5px;
-    background-color: #ec2d2b;
-}
 
-.grey-line {
-    height: 55px;
-    background: rgba(0, 0, 0, 0.5);
-    margin-bottom: 168px;
-}   
-
-.middle {
-    display: inline-block;
-    width: 70%;
-}
-
-.icon {
-    /*display: inline-block;*/
+.calendis-icon {
     float: left;
     margin-top: 7px;
-    margin-left: 10px;
     height: 35px;
-    width: 100px;
 }
 
-.navigation-wrapper ul {
-    float: right;
-    margin-top: 19px;
-    margin-right: 6px;
-}
-
-.navigation-wrapper ul li {
-    display: inline;
-    margin-left: 20px;
-    color: white;
-}
-
-.navigation-wrapper ul li a {
-    color: white;
-    opacity: 1;
-    padding: 10px;
-}
-
-.navigation-wrapper ul li a:hover {
-     border-bottom: 3px solid #ec2d2b;
-}
-
-
-.home-section {
-    display: block;
-    width: 100%;
-    height:692px;
-    background-image: url(../images/100000.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*filter: brightness(50%);*/
-    background-color: grey;
-    background-attachment: fixed;
-}
-
-.header-1 {
-    padding-top: 193px;
-    text-align: center;
-    color:white;
-    font-size: 48px;
-    margin-bottom: 102px;
-}
-
-.button {
-    margin: auto;
+.register-button {
+    /*The whole line is clickable!*/
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 42px;
+    width: 200px;
     border-radius: 3px;
     background-color: #ec2d2b;
-    /*height: 42px;*/
-    width: 200px;
-    text-align: center;
-    padding-top: 17px;
-    padding-bottom: 14px;
-    margin-bottom: 70px;
+}
+
+.register-button:hover {
+    background-color: darkred;
+}
+
+.register-button p{
+    padding-top: 10px;
     color:white;
     font-weight: bold;
 }
 
-.button:hover {
-    background-color: darkred;
-}
-
-.trapezoid {
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    vertical-align: middle;
-}
-
-.quote-icon {
-    display: inline-block;
-    padding-right: 5px;
-}
-
-.white-text {
+.white-paragraph{
     display: inline-block;
     padding-top: 76px;
     color:white;
-    opacity: 1;
     font-size: 18px;
 }
 
-.triangle {
-    margin-top: -50px;
-    width: 100%;
-    height: 50px;
-    clip-path: polygon(0 0, 100% 100%, 0 100%);
-    background-color: white;
-
+.section-header {
+    padding-top: 100px;
+    margin-bottom: 70px;
 }
 
-.down-arrow {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 73px;
-    background-color: white;
-}
-
-.header-2 {
-    padding-top: 80px;
-    text-align: center;
+.section-header p {
     color:#4c4c4b;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 9px;
 }
 
-.short-line {
+.section-header div {
+    /*why you no can define it only here???*/
     margin: auto;
     border-radius: 3px;
     width: 50px;
     height: 5px;
     background-color: #ec2d2b;
-    margin-bottom: 100px;
 }
 
-.tabel {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 840px;
-    height: 431px;
-    table-layout: fixed;
-    text-align: center;
-    /*font-weight: bold;*/
-    font-size: 18px; 
-    color: rgba(76, 76, 75, 0.75);
-    margin-bottom: 50px;
-}
-
-.tabel tr:first-child {
-    border-bottom: 1px solid rgba(43, 44, 43, 0.25);
-    vertical-align: top;
-}
-
-.tabel tr:last-child {
-    vertical-align: bottom;
-}
-
-.tabel tr td:first-child {
-    border-right: 1px solid rgba(43, 44, 43, 0.25);
-} 
-
-.grey-text {
+.dark-grey-text {
     display: inline-block;
     color:#4c4c4b;
-    text-align: center;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-.grey-section{
+#middle-section {
+    display: inline-block;
+    width: 70%;
+}
+
+/*Top navigation section*/
+
+
+.top-navigation {
+    position: fixed; /* this is why the backgound image gets under it!*/
+    z-index: 1;  /*this keeps the navigation on top, after image is darkened with filter */
+    width: 100%;
+}
+
+#red-line {
+    height:5px;
+    background-color: #ec2d2b;
+}
+
+#grey-line {
+    height: 55px;
+    background: rgba(0, 0, 0, 0.5);
+}   
+
+#middle-section ul {
+    float: right;
+    margin-top: 19px;
+}
+
+#middle-section ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#middle-section ul li a {
+    padding-bottom: 10px;
+    color: white;
+}
+
+#middle-section ul li a:hover {
+    border-bottom: 3px solid #ec2d2b;
+}
+
+
+/*Home section*/
+
+
+.home-section {
+    background-image: url(../images/100000.jpg);
+    width: 100%;
+    height:692px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    background-attachment: fixed; /* this fixes images on scroll for cool effect */
+}
+
+#home-header {
+    padding-top: 193px;
+    color:white;
+    font-size: 48px;
+}
+
+#trapezoid {
+    margin-top: 130px;
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#white-quote-icon {
+    display: inline-block;
+}
+
+#white-triangle {
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: white;
+}
+
+
+/*Benefits section*/
+
+
+#benefit-table {
+    margin: 0 auto; /* this centers it because it doesnt know it's suppose to be centered...*/
+    border-collapse: collapse; /* without this, the horizontal line does not appear at all? */
+    width: 840px;
+    height: 431px;
+    table-layout: fixed; /* this makes it aligned with title, not adjusted to it's text width. */
+    margin-bottom: 50px;
+}
+
+#benefit-table tr:first-child {
+    border-bottom: 1px solid rgba(43, 44, 43, 0.25);
+    vertical-align: top;
+}
+
+#benefit-table tr:last-child {
+    vertical-align: bottom;
+}
+
+#benefit-table tr td:first-child {
+    border-right: 1px solid rgba(43, 44, 43, 0.25);
+} 
+
+#grey-rectangle {   
+    margin-top: 70px;
     height: 220px;
     background-color: #2b2b2b;
-    vertical-align: middle;
-    text-align: center;
 }
+
+
+/*Client section*/
+
 
 .client-section {
     height: 370px;
+    width: 100%;
     background-color: rgba(44, 44, 44, 0.07);
-    text-align: center;
 }
 
 .client-logos {
@@ -225,79 +218,100 @@ ol, ul, li, p {
     padding-right: 20px;
 }
 
-.price-tabs {
-    text-align: center;
+
+/*Price section*/
+
+
+#price-table{
+    height: 490px;
+    width: 554px;
+    margin: 0 auto;
+    border-spacing: 0px;
 }
 
-.price-tab {
-    display: inline-block;
-    height: 490px;
-    width: 277px;
+#price-table tr td {
     border-radius: 3px;
     border: 1px solid rgba(43, 44, 43, 0.25);
-    margin-bottom: 20px;
-    margin-right: -5px;
-    background-image: url(../images/Calendis_House_Inactive.png);
     background-repeat: no-repeat;
-    background-size: 45px 45px;
     background-position: center 30px;
-    font-size: 18px; 
-    color: rgba(76, 76, 75, 0.75);
 }
 
-.price-tab:hover {
+#price-table tr td:hover {
     border: 2px solid #ec2d2b;
+}
+
+#price-table tr td:first-child {
+    background-image: url(../images/Calendis_House_Inactive.png);
+}
+
+#price-table tr td:first-child:hover {
     background-image: url(../images/Calendis_House_Active.png);
 }
 
-.header-3 {
-    padding-top: 104px;
+#price-table tr td:last-child {
+    background-image: url(../images/Calendis_Building_Inactive.png);
+}
+
+#price-table tr td:last-child:hover {
+    background-image: url(../images/Calendis_Building_Active.png);
+}
+
+#price-table p {
+    margin-top: 70px;
+    margin-bottom: 40px;
     color:#2c2c2c;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 40px;
 }
 
 .red-text {
     display: inline;
+    margin-bottom: 20px;
     color: #ec2d2b;
     font-size: 30px;
     font-weight: bold;
 }
 
-.price-comments {
-    text-align: center;
+#price-comment-text {
+    padding-top: 20px;
     font-size: 12px;
-    margin-bottom: 50px;
+    color:#4c4c4b;
 }
 
-.footer-section{
+
+/*Footer section*/
+
+
+#footer-section {
+    margin-top: 100px;
     height: 192px;
     background-color: #2b2b2b;
-    vertical-align: middle;
-    text-align: center;
     font-size: 12px;
     color:grey;
- }
+}
 
-
-.footer-section ul li {
-    display: inline-block;
+#footer-section ul {
+    width: 70%;
+    margin: 0 auto;
     text-align: left;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    vertical-align: top;
+
 }
 
-.footer-section ul li a {
+#footer-section ul li{
+    display: inline-block;
+    vertical-align: top;
+    /*margin-left: 2%;*/
+    margin-right: 2%;
+}
+
+#footer-section ul li a {
     color: grey;
     padding: 20px;
 }
 
-
-.footer-section ul li a:hover {
+#footer-section ul li a:hover {
     color: white;
 }
 
@@ -307,3 +321,31 @@ ol, ul, li, p {
     padding-left: 20px;
 }
 
+#social-icons a {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#social-icons a:first-child {
+    background-image: url(../images/fb-gri.png);
+}
+
+#social-icons a:first-child:hover {
+    background-image: url(../images/fb-alb.png);
+}
+
+#social-icons a:nth-child(2) {
+    background-image: url(../images/tw-gri.png);
+}
+
+#social-icons a:nth-child(2):hover {
+    background-image: url(../images/tw-alb.png);
+}
+
+#social-icons a:last-child {
+    background-image: url(../images/in-gri.png);
+}
+
+#social-icons a:last-child:hover {
+    background-image: url(../images/in-alb.png);
+}
