@@ -16,7 +16,7 @@ ul, ol, li, p {
 	list-style: none;
 }
 
-#home-section{
+.home-section{
 	background-image: url("../images/Layer.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -113,7 +113,7 @@ margin-top: 100px;
 
 }
 
-#benefits-section{
+.benefits-section{
 	width: 100%;
 	height: auto;
 }
