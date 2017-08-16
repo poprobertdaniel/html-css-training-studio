@@ -5,9 +5,17 @@ html , body {
 	font-family: "Roboto", sans-serif;
 }
 
+p {
+	font-size: 18px;
+}
+
 a {
 	color: #000000;
 	text-decoration: none;
+}
+
+div {
+	font-size: 0;
 }
 
 ul, ol, li, p {
@@ -142,15 +150,20 @@ margin-top: 100px;
     width: 50px;
 }
 
-.first-row, .second-row{
-	font-size: 18px;
+.benefits-container {
 	font-weight: bold;
 	color: rgba(76, 76, 75, 0.75);
+	width: 820px;
+	margin: 0 auto;
+}
+
+.benefits-container p {
+	font-size: 18px;
 }
 
 .col1, .col2, .col3, .col4 {
 	display: inline-block;
-	width: 49.6%;
+	width: 409px;
 	text-align: center;
 
 }
@@ -163,7 +176,7 @@ margin-top: 100px;
 	border-bottom: 1px solid gray;
 }
 
-img{
+.benefits-container img{
 	width: auto;
 	height: auto;
 	margin-top: 40px;
