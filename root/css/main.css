@@ -1,19 +1,105 @@
 
-.navigation-wrapper {
-	width: 100%
-	background-color: rgb(206, 213, 224);
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.red-rectangle{
+	width: 100%;
+	height: 5px;
+	background-color: #ec2d2b;
 
 }
 
-.navigation-wrapper li {
-	width: 200px;
-	high:200px;
-	color: white;
-	background-color: rgb(0,0,0);
+.navigation-wrapper{
+	width: 100%;
+	margin-top: 15px;
+	position: fixed;
+}
+
+.logo-calendis{
+	background-color: none;
+	float: left;
+	padding-left: 213px;
+	padding-top: 15px;
+}
+
+.navigation-menu {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-right: 213px;
+
+}
+
+nav {
 	display: inline;
+}
+
+body {
+	background-image: url("../Images/Layer.jpg");
+	border-top: 15px;
+}
+
+ul li {
+	display: inline;
+	padding: 10px;
+	color: white;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: bold;
 
 }
 
-.navigation-wrapper li:hover {
-    color: pink;
+.appointments {
+	height: 46px;
+	line-height: 46px;
+	color: white;
+	font-size: 48px;
+	
+}
+p{
+	margin: 193px 0;
+	text-align: center;
+}
+
+.registration-button{
+	height: 42px;
+	line-height: 42px;
+	width: 200px;
+	color: white;
+	background-color: red;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 auto;
+	border: 0px;
+	display: block;
+
+}
+
+.bottom-line-first-section{
+	width: 100%;
+	height: 200px;
+	margin-top: 109px;
+	
+}
+
+#myPolygon{
+	color: yellow;
+	background-color: rgba(0,0,0,0.5);
+
 }
