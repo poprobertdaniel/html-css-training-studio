@@ -16,6 +16,14 @@ ul, ol, li, p {
 	list-style: none;
 }
 
+div {
+	font-size: 0px;
+}
+
+p {
+	font-size: 12px;
+}
+
 .home-section{
 	background-image: url("../images/Layer.jpg");
 	background-repeat: no-repeat;
@@ -142,10 +150,27 @@ margin-top: 100px;
     width: 50px;
 }
 
-.first-row, .second-row{
-	font-size: 18px;
+.benefits-container {
 	font-weight: bold;
 	color: rgba(76, 76, 75, 0.75);
+	width: 820px;
+	margin: 0 auto;
+	color: #4c4c4b;
+
+}
+
+.benefits-container p{
+	font-size: 18px;
+}
+
+.benefits-container p {
+	text-align: center;
+		padding: 30px 0px;
+}
+
+.benefits-container button {
+	display: block;
+	margin: 0 auto;
 }
 
 .col1, .col2, .col3, .col4 {
@@ -156,11 +181,11 @@ margin-top: 100px;
 }
 
 .col1, .col3 {
-	border-right: 1px solid gray;
+	border-right: 1px solid rgba(43,44, 43, 0.25);
 }
 
 .col1, .col2 {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid rgba(43,44, 43, 0.25);
 }
 
 img{
@@ -170,5 +195,7 @@ img{
 }
 
 .col1 p, .col2 p, .col3 p, .col4 p{
-	padding: 30px 0px;
+
+	opacity: 0.75;
 }
+,
