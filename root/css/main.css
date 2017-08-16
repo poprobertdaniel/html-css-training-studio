@@ -1,19 +1,14 @@
-div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+html, body {
+	margin: 0;
+	padding:0;
+	height: 100%;
 }
-.navigation-wrapper{
-	width: 100%;
-	background-color: #ced5e0;
+a {
+	color: #000000;
+	text-decoration: none;
 }
-.navigation-wrapper li {
-	display: inline;
-	:hover {
-		background-color: #808080;
-	};
+ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
-
-.navigation-wraper > li a: hover{
- 	background-color: #CD5C5C;
- }
