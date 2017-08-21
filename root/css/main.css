@@ -1,15 +1,12 @@
-
 html , body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-
 	font-family: "Roboto", sans-serif;
 }
 
 p {
 	font-size: 18px;
-
 }
 
 a {
@@ -17,11 +14,9 @@ a {
 	text-decoration: none;
 }
 
-
 div {
 	font-size: 0;
 }
-
 
 ul, ol, li, p {
 	margin: 0;
@@ -29,21 +24,17 @@ ul, ol, li, p {
 	list-style: none;
 }
 
-
 .home-section{
 	background-image: url("../images/Layer.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
 #navbar-wrapper{
-	position: fixed;
 	width:100%;
 	height: 40px;
 	padding-top: 10px;
 	position: fixed;
-
 
 }
 
@@ -77,6 +68,7 @@ ul, ol, li, p {
 	border-color: red;
 	border-bottom-style: solid;
 	border-radius: 1.5px;
+
 	}
 
 
@@ -92,10 +84,9 @@ ul, ol, li, p {
 	font-size: 48px;
 	color: white;
 	text-align: center;
+	padding-top: 140px;
 }
-.home-section .end-home-section p {
-	font-size: 16px;
-}
+
 .register-div{
 	text-align: center;
 	padding-top: 102px;
@@ -123,16 +114,10 @@ margin-top: 100px;
 .end-home-section p{
 	background-image: url("../images/Calendis_Quote_Mark_Grey.png");
 	background-repeat: no-repeat;
-	background-position: 22% 100%; /* de modificat pt responsivness */
-	font-size: 18px;
-  	line-height: 27px;
-  	padding-top: 75px;
-
-}
-
-.benefits-section{
-	width: 100%;
-	height: auto;
+	font-size:18px;
+	padding-top:79px;
+	background-position: 30% 100%;
+	
 }
 
 .down-arrow {
@@ -140,43 +125,49 @@ margin-top: 100px;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height:60px;
+	height: 50px;
+	
+	
 }
 
-.benefits-title p {
-	font-size: 28px;
-	font-weight: bold;
-	color: #4c4c4b;
-	text-align: center;
-	padding-top: 48px;
 
-}
+.benefits-section {
 
-.benefits-title hr{
-	border:0;
-    border-top: 5px solid red;
-    border-radius: 2px;
-    width: 50px;
-}
-
-.benefits-container {
 	font-weight: bold;
 	color: rgba(76, 76, 75, 0.75);
 	width: 820px;
 	margin: 0 auto;
+	}
+
+.benefits-section  hr{
+	background-color: #ec2d2b;
+	width: 50px; 
+	height: 5px;
+	border-radius: 2.5px;
+	margin-bottom: 15px;
+	
+}
+	
+.benefits-section p{
+	padding-top:108px;
+	font-size:28px;
+	text-align:center;
+	color: #4c4c4b;
+	
 }
 
-.benefits-container p {
+
+.col1 p, .col2 p, .col3 p, .col4 p {
+	padding: 30px 0px;
 	font-size: 18px;
-}
-
-.col1, .col2, .col3, .col4 {
-	display: inline-block;
-	width: 409px;
-	text-align: center;
-
-}
-
+	color: rgba(76, 76, 75, 0.75);
+	}
+.benefits-section img{
+	width: auto;
+	height: auto;
+	margin-top: 40px;
+	
+}	
 .col1, .col3 {
 	border-right: 1px solid gray;
 }
@@ -184,14 +175,15 @@ margin-top: 100px;
 .col1, .col2 {
 	border-bottom: 1px solid gray;
 }
-
-.benefits-container img{
-	width: auto;
-	height: auto;
-	margin-top: 40px;
-}
-
-.col1 p, .col2 p, .col3 p, .col4 p{
-	padding: 30px 0px;
-}
-
+	
+.col1, .col2, .col3, .col4  {
+	display: inline-block;
+	width: 409px;
+	text-align: center;
+	}
+	
+	
+	
+	
+	
+	
