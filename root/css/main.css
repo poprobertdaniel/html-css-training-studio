@@ -142,15 +142,20 @@ margin-top: 100px;
     width: 50px;
 }
 
-.first-row, .second-row{
+.benefits-container{
 	font-size: 18px;
 	font-weight: bold;
 	color: rgba(76, 76, 75, 0.75);
+	width: 820px;
+	margin: 0 auto;
+
+
 }
+
 
 .col1, .col2, .col3, .col4 {
 	display: inline-block;
-	width: 49.6%;
+	width: 403px;
 	text-align: center;
 
 }
