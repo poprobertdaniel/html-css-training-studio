@@ -13,9 +13,9 @@
 
 		<nav>
 			<div class="top-navigation">
-				<div id="red-line"></div>
-				<div id="grey-line">
-					<div id="middle-section">
+				<div></div> <!-- red line -->
+				<div> <!-- grey line -->
+					<div class="middle-section">
 						<div>
 							<a href="#Acasa"><img class="calendis-icon" src="images/logo.png" alt="Calendis"></a>
 						</div>
@@ -41,21 +41,21 @@
 
 
 		<div id="Acasa" class="home-section">
-			<div id="home-header">
+			<h1>
 				Programari mai rapide
+			</h1>
+			<div class="button-wrapper">
+				<div class="register-button">INREGISTREAZA-TE</div>
 			</div>
- 			<a href="inregistrare">
-				<div class="register-button"><p>INREGISTREAZA-TE</p></div>
-			</a>
-			<div id="trapezoid">
-				<div id="white-quote-icon">
+			<div class="trapezoid">
+				<div>
 					<img src="images/quote.png"/>
 				</div>
 				<div class="white-paragraph">
 					Eu sunt <b>Calendis</b>, asistentul tău digital. Te ajut să-ți programezi <b>clienții</b>, le trimit <br> <b>SMS</b>-uri și <b>e-mailuri</b>, iar tu nu vei mai pierde programări. <b>Niciodată</b>.
 				</div>
 			</div>
-			<div id="white-triangle"></div>
+			<div class="white-triangle"></div>
 			<div>
 				<a href="#Beneficii"><img src="images/Calendis_Arrow_Red100.png"/></a>
 			</div>
@@ -67,33 +67,29 @@
 
 		<div id="Beneficii">
 			<div class="section-header">
-				<p>Hai să-ți detaliez ce fac pentru tine</p>
+				<h2>Hai să-ți detaliez ce fac pentru tine</h2>
 				<div></div> 
 			</div>
 			<div>
-				<table id="benefit-table">
+				<table class="benefit-table">
 					<tr>
 						<td> 
-							<img src="images/Calednis_Evidenta.png"/>
-							<p><br>Țin o evidență clară a programărilor, <br>
-							accesibilă de oriunde, oricând.</p>
+							<b>Țin o evidență clară a programărilor, <br>
+							accesibilă de oriunde, oricând.</b>
 						</td>
 						<td> 
-							<img src="images/Calendis_SMS.png"/>
-							<p><br>Îți notific clienții prin SMS și e-mail ca să <br>
-							nu uite sau să întârzie la programare.</p>
+							<b>Îți notific clienții prin SMS și e-mail ca să <br>
+							nu uite sau să întârzie la programare.</b>
 						</td>
 					</tr>
 					<tr>
 						<td> 
-							<img src="images/Calendis_Gift.png"/>
-							<p><br>Le trimit e-mailuri promoționale de <br>
-							câte ori consideri necesar.</p>
+							<b>Le trimit e-mailuri promoționale de <br>
+							câte ori consideri necesar. </b>
 						</td>
 						<td> 
-							<img src="images/Calendis_Chart.png"/>
-							<p><br>Creez rapoarte multiple ca să ai o privire <br>
-							de ansamblu.</p>
+							<b>Creez rapoarte multiple ca să ai o privire <br>
+							de ansamblu. </b>
 						</td>
 					</tr>
 				</table>
@@ -101,10 +97,10 @@
 					...iar clienții se pot programa singuri la tine, eliberându-ți și mai mult timp.
 				</div>
 			</div>
-			<a href="inregistrare">
-				<div class="register-button"><p>INREGISTREAZA-TE</p></div>
-			</a>
-			<div id="grey-rectangle">
+			<div class="button-wrapper">
+				<div class="register-button">INREGISTREAZA-TE</div>
+			</div>
+			<div class="benefit-grey-rectangle">
 				<div class="white-paragraph">
 					<img src="images/Calendis_Quote_Mark_Red.png"/>
 					Sunt tot timpul disponibil și te pot ajuta <b>oricând</b>. <br>
@@ -121,14 +117,14 @@
 
 		<div id="Clienti" class="client-section">
 			<div class="section-header">
-				<p>Îi ajut cu spor și pe</p> 
+				<h2>Îi ajut cu spor și pe</h2> 
 				<div></div>
 			</div>
 			<div>
-				<img class="client-logos" src="images/Barber-shop-logo.png"/>
-				<img class="client-logos" src="images/Fitness-Studio-bv.png"/>
-				<img class="client-logos" src="images/Smile-Central.png">
-				<img class="client-logos" src="images/Logo-Boudoir.png">
+				<img src="images/Barber-shop-logo.png"/>
+				<img src="images/Fitness-Studio-bv.png"/>
+				<img src="images/Smile-Central.png"/>
+				<img src="images/Logo-Boudoir.png"/>
 			</div>
 		</div>
 
@@ -138,87 +134,95 @@
 
 		<div id="Preturi"> <!-- Weird to name spot and to call an id the same way -->
 			<div  class="section-header">
-				<p>Abonamente simple și clare</p>
+				<h2>Abonamente simple și clare</h2>
 				<div></div>
 			</div>
-			<ul id="price-table">
-					<li>
-						<p> Planul LUNAR </p>
+			<div class="price-table">
+					<div>
+						<h3> Planul LUNAR </h3>
 						<b>1 luna + 100 SMS-uri </b><br>
-						<div class="dark-grey-text">GRATUIT</div>
+						<p class="dark-grey-text">GRATUIT</p>
 						<br><b>Pret angajat/luna </b><br>
-						<div class="red-text">8</div>
-						<div class="dark-grey-text">EUR</div>
+						<p class="price-red-text">8</p>
+						<p class="dark-grey-text">EUR</p>
 						<br><b>Pret colaborator/luna</b><br>
-						<div class="red-text">4</div>
-						<div class="dark-grey-text">EUR</div>
+						<p class="price-red-text">4</p>
+						<p class="dark-grey-text">EUR</p>
 						<br><b>Pret SMS </b><br>
-						<div class="red-text">0.05</div>
-						<div class="dark-grey-text">EUR</div>
-					</li>
-					<li>
-						<p> Planul ANUAL </p>
+						<p class="price-red-text">0.05</p>
+						<p class="dark-grey-text">EUR</p>
+					</div>
+					<div>
+						<h3> Planul ANUAL </h3>
 						<b>1 luna + 100 SMS-uri </b><br>
-						<div class="dark-grey-text">GRATUIT</div>
+						<p class="dark-grey-text">GRATUIT</p>
 						<br><b>Pret angajat/luna </b><br>
-						<div class="red-text">6.67</div>
-						<div class="dark-grey-text">EUR</div>
+						<p class="price-red-text">6.67</p>
+						<p class="dark-grey-text">EUR</p>
 						<br><b>Pret colaborator/luna</b><br>
-						<div class="red-text">3.33</div>
-						<div class="dark-grey-text">EUR</div>
+						<p class="price-red-text">3.33</p>
+						<p class="dark-grey-text">EUR</p>
 						<br><b>Pret SMS </b><br>
-						<div class="red-text">0.05</div>
-						<div class="dark-grey-text">EUR</div>
-					</li>
-			</ul>
-			<div id="price-comment-text">
+						<p class="price-red-text">0.05</p>
+						<p class="dark-grey-text">EUR</p>
+					</div>
+			</div>
+			<div class="price-comment-text">
 				*prețurile nu includ <b>TVA</b> <br>
 				*subscripția anuală se plătește <b>o dată pe an</b> <br>
 				*orarul unui colaborator nu poate depăși <b>15 ore pe săptămână</b> 
 			</div>
-			<a href="inregistrare">
-				<div class="register-button"><p>Incearca ACUM</p></div>
-			</a>
+			<div class="button-wrapper">
+				<div class="register-button">Incearca ACUM</div>
+			</div>
 		</div>
 
 
 		<!-- Footer section -->
 
 
-		<div id="footer-section">
-			<ul>
-				<li>
+		<footer class="footer-section-wrapper">
+			<div class="footer-section">
+				<div>
 					<a href="#Acasa"><img class="calendis-icon" src="images/logo.png" alt="Calendis">
 					</a>
-				</li> 
-				<li></li> <!-- This ugly! -->
-				<li>
-					<a href="">Despre Calendis</a> <br> <br>
-					<a href="">Termeni si Conditii</a> <br> <br>
-					<a href="">Politica de confidentialitate</a>
-				</li>
-				<li>
-					<a href="">Blog</a> <br> <br>
-					<a href="">FAQ</a>
-				</li>
-				<li>
-					<a href="">Preturi</a> <br> <br>
-					<a href="">Parteneri</a>
-				</li>
-				<li>
-					<a href="">Contact</a> <br> <br>
-					<img class="contact-icons" src="images/phone-512.png"/>
-					0770.901.141 <br> <br>
-					<img class="contact-icons" src="images/email-512.png"/>
-					contact@calendis.ro
-				</li>
-				<li id="social-icons">
+				</div>
+				<div>
+					<div>
+						<a href="">Despre Calendis</a><br>
+						<a href="">Termeni si Conditii</a><br>
+						<a href="">Politica de confidentialitate</a>
+					</div>
+					<div>
+						<a href="">Blog</a><br>
+						<a href="">Intrebari frecvente</a>
+					</div>
+					<div>
+						<a href="">Parteneri</a><br>
+						<a href="">Colaboratori</a>
+					</div>
+					<div>
+						<a href="">Contact</a><br>
+						<img class="contact-icons" src="images/phone-512.png"/>
+						<p> 0770.901.141 </p><br>
+						<img class="contact-icons" src="images/email-512.png"/>
+						<p> contact@calendis.ro </p>
+					</div>
+				</div>
+				<div class="social-icons">
 					<a href=""><div></div></a>
 					<a href=""><div></div></a>
-					<a href=""><div id="in-icon"></div></a>
-				</li>
-			</ul>
-			2015 Calendis - Toate drepturile rezervate
-		</div>
+					<a href=""><div ></div></a>
+				</div>
+			</div>
+			<p> 2015 Calendis - Toate drepturile rezervate </p>
+		</footer>
 
 	</body>
+
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</html>
