@@ -222,8 +222,9 @@ margin-top: 100px;
 	}
 .clients-container {
 	text-align:center;
-	height: auto;
-    margin-bottom: 100px;
+	height: 370px;
+  margin-bottom: 100px;
+	background-color: #f1f1f1;
 	}
 
 .clients-title p{
@@ -233,32 +234,100 @@ margin-top: 100px;
 	padding-top:80px;
 	padding-bottom:10px;
 	color: #4c4c4b;
-	
+
 	}
-	
+
 .clients-title hr{
 	border:0;
     border-top: 5px solid #ec2d2b;
     border-radius: 2px;
     width: 50px;
 	background-color: #ec2d2b;
-	
+
 }
 
 .clients-list {
 	text-align:center;
 	height: 93px;
 	width: 780px;
-	
+
 	}
 .c1, .c2, .c3, .c4 {
 	display:inline-block;
 	padding-top: 50px;
 	padding-right: 40px;
-	
+
 }
 
 .c1 img, .c2 img, .c3 img, .c4 img{
 	height: 93px;
-	
+}
+.prices-container {
+	margin-bottom: 30px;
+}
+.prices-container .prices-wrapper {
+	margin: 0 auto;
+	width: 554px;
+	padding-top: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.prices-container .prices-wrapper div {
+	padding: 15px 0;
+}
+.prices-container .prices-wrapper p:first-of-type {
+	margin: 5px 0;
+	color: #4c4c4b;
+}
+.prices-container .prices-col1, .prices-col2 {
+	width: 270px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+.prices-container .prices-col1 {
+	border-right: 0;
+}
+.prices-container .row1 {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 45px;
+	margin: 0 auto;
+}
+.prices-container .prices-col1 .row1 {
+	background-image: url("../images/Calendis_House_Inactive.png");
+}
+.prices-container .prices-col2 .row1 {
+	width: 55px;
+	background-image: url("../images/Calendis_Building_Inactive.png");
+}
+.prices-container .prices-col1:hover {
+	border: 2px solid #ec2d2b;
+}
+.prices-container .prices-col2:hover {
+	border: 2px solid #ec2d2b;
+}
+.prices-container .prices-col1:hover .row1 {
+	background-image: url("../images/Calendis_House_Active.png");
+}
+.prices-container .prices-col2:hover .row1 {
+	background-image: url("../images/Calendis_Building_Active.png");
+}
+.prices-container .prices-wrapper .row2 p{
+	color: #2c2c2c;
+}
+.prices-container .price-number {
+	color: #ec2d2b;
+	font-size: 36px;
+}
+.prices-container .price-currency {
+	font-size: 18px;
+	color: #2c2c2c;
+	text-transform: uppercase;
+}
+footer {
+	background-color: #2c2c2c;
+	height: 100px;
 }
