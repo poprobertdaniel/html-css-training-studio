@@ -220,6 +220,11 @@ margin-top: 100px;
 	background-position: 38% 55%; /* de modificat */
 	padding-top: 73px;
 	}
+.clients-container {
+	text-align:center;
+	height: auto;
+    margin-bottom: 100px;
+	}
 
 .clients-title p{
 	text-align:center;
@@ -242,12 +247,17 @@ margin-top: 100px;
 
 .clients-list {
 	text-align:center;
+	height: 93px;
+	width: 780px;
+	
 	}
 .c1, .c2, .c3, .c4 {
 	display:inline-block;
 	padding-top: 50px;
-
+	padding-right: 40px;
+	
 }
+
 .c1 img, .c2 img, .c3 img, .c4 img{
 	height: 93px;
 	
