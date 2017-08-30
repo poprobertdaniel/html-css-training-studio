@@ -223,7 +223,8 @@ margin-top: 100px;
 .clients-container {
 	text-align:center;
 	height: auto;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+	background-color: #efeaea;
 	}
 
 .clients-title p{
@@ -249,16 +250,138 @@ margin-top: 100px;
 	text-align:center;
 	height: 93px;
 	width: 780px;
-	
 	}
 .c1, .c2, .c3, .c4 {
 	display:inline-block;
 	padding-top: 50px;
-	padding-right: 40px;
+	padding-right: 70px;
 	
 }
 
 .c1 img, .c2 img, .c3 img, .c4 img{
 	height: 93px;
+}
+
+
+.prices-title p {
+	font-size: 28px;
+	text-align: center;
+	color: #4c4c4b;
+	padding-top: 80px;
+	padding-bottom: 14px;
+	font-weight: bold;
 	
 }
+
+.prices-title hr{
+	border:0;
+    border-top: 5px solid #ec2d2b;
+    border-radius: 2px;
+    width: 50px;
+	background-color: #ec2d2b;
+	
+}
+
+.prices-list-wrapper {
+	text-align: center;
+	padding-top: 45px;
+    color: var(--black);
+}
+.prices-list-wrapper .coloana1, .coloana2{
+	border: solid 1px rgba(43,44,43,0.25);
+	width: 277px;
+    height: 490px;
+    padding-top: 31px;
+    display: inline-block;
+    text-align: center;
+}
+.r1{
+	background-image: url("../images/Calendis_House_Inactive.png");
+	background-repeat: no-repeat;
+
+    height: 45px;
+    width: 45px;
+    margin-left: 114px;
+	
+}
+.r7{
+	background-image: url("../images/Calendis_Building_Inactive.png");
+	background-repeat: no-repeat;
+    height: 45px;
+    width: 55px;
+    margin-left: 107px;
+    
+}
+.prices-list-wrapper .r1, .r7{
+	padding-bottom: 28px;
+}
+.prices-list-wrapper .r2 p, .r8 p{
+	font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.prices-list-wrapper .r3 p, .r4 p, .r5 p, .r6 p, .r9 p, .r10 p, .r11 p, .r12 p{
+	font-size: 16px;
+	color: #4c4c4b;
+	font-weight: bold;
+}
+
+.r3, .r4, .r5, .r6, .r9, .r10, .r11, .r12 {
+	padding-bottom: 30px;
+}
+.r3 p:last-of-type{
+	color:#2c2c2c;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.r9 p:last-of-type{
+	color:#2c2c2c;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.price-value {
+	color: #ec2d2b;
+	font-size: 36px;
+	font-weight: bold;
+}
+.price-currency{
+	font-weight: bold;
+	color: #2c2c2c;
+	font-size: 18px;
+}
+.prices-information-message p{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12px;
+
+}
+.coloana1:hover{
+	border: solid 2px #ec2d2b;	
+}
+.coloana1:hover .r1{
+	background-image: url("../images/Calendis_House_Active.png");
+	
+}
+.coloana2:hover{
+	border: solid 2px #ec2d2b;	
+}
+.coloana2:hover .r7{
+	background-image: url("../images/Calendis_Building_Active.png");
+	
+}
+.prices-register-button{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.register-button{
+	width: 175px;
+  	height: 42px;
+  	border-radius: 3px;
+  	font-size: 16px;
+  	font-weight: bold;
+  	color: white;
+  	border-color: transparent;
+  	background-color: #ec2d2b;
+
+  }
