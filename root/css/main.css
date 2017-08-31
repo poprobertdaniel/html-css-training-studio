@@ -322,13 +322,21 @@ a {
 .prices-container{
 
 	border: 1px solid blue;
+	width: 558px;
+	margin: 20px auto;
+	/*font-size: 18px;*/
+
 }
 
 .monthly-plan-wrapper{
 
 	height: 490px;
 	width: 277px;
-	border: 1px solid black;
+	border: 1px solid grey;
+	padding-top: 31px;
+
+	text-align: center;
+	font-size: 24px;
 
 	display: inline-block;
 }
@@ -337,7 +345,67 @@ a {
 
 	height: 490px;
 	width: 277px;
-	border: 1px solid black;
+	border: 1px solid grey;
+	padding-top: 31px;
+
+	text-align: center;
+	font-size: 24px;
 
 	display: inline-block;
+}
+
+.prices-container p {
+
+	padding-top: 31px;
+
+}
+
+.monthly-price-l1{
+
+	width: auto;
+	font-size: 16px;
+
+
+}
+
+.monthly-price-l2{
+
+	font-size: 16px;
+
+}
+
+.monthly-price-l3{
+
+	font-size: 16px;
+
+}
+
+.monthly-price-l4{
+
+	font-size: 16px;
+
+}
+
+.annually-price-l1{
+
+	font-size: 16px;
+
+}
+
+.annually-price-l2{
+
+	font-size: 16px;
+
+}
+
+.annually-price-l3{
+
+	font-size: 16px;
+
+}
+
+.annually-price-l4{
+
+	font-size: 16px;
+
 }
